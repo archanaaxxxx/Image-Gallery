@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 30px;
+            background-color: rgb(194, 141, 243);
+        }
+        h1{
+            text-align: center;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            background-color: rgb(241, 171, 236);
+            background-color: 2px solid black;
+        }
+        .item{
+            text-align: center;
+        }
+        .gallery img{
+            width:200px;
+            height:200px;
+            margin-top: 10px;
+            transition: transform 1s;
+        }
+        .gallery img:hover{
+            transform: scale(1.5);
+        }
+        .cap{
+            margin-top: 20px;
+            font-weight: bold;
+            color: solid black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cartoons</h1>
+    <div class="gallery">
+        <div class="item">
+            <img src="shinchan.jpg" alt="Shinchan">
+            <p class="cap">Shinchan</p>
+        </div>
+        <div class="item">
+            <img src="doremon.webp" alt="Doremon">
+            <p class="cap">Doremon</p>
+        </div>
+        <div class="item">
+            <img src="tom jerry.jpg" alt="Tom and Jerry">
+            <p class="cap">Tom and Jerry</p>
+        </div>
+        <div class="item">
+            <img src="dora.jpg" alt="Dora">
+            <p class="cap">Dora</p>
+        </div>
+        <div class="item">
+            <img src="micky mouse.webp" alt="Micky Mouse">
+            <p class="cap">Micky Mouse</p>
+        </div>
+        <div class="item">
+            <img src="bheem.jpg" alt="Chotta Bheem">
+            <p class="cap">Chotta Bheem</p>
+        </div>
+    </div>
+</body>
+</html>
